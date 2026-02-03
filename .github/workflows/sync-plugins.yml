@@ -1,0 +1,44 @@
+name: Sync Plugins
+
+on:
+  schedule:
+    # Run nightly at 4am UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update submodules
+        run: git submodule update --remote
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            # Get list of changed submodules
+            CHANGED=$(git diff --name-only | grep plugins/ | xargs -I {} basename {} | sort -u | tr '\n' ', ' | sed 's/,$//')
+            echo "submodules=$CHANGED" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: nightly git submodule sync [${{ steps.changes.outputs.submodules }}] ($(date +%Y-%m-%d))"
+          git push
