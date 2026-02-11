@@ -1,0 +1,9 @@
+[submodule "plugins/claude-vision"]
+	path = plugins/claude-vision
+	url = https://github.com/ellyseum/claude-vision.git
+[submodule "plugins/claude-vault"]
+	path = plugins/claude-vault
+	url = https://github.com/ellyseum/claude-vault.git
+[submodule "plugins/claude-notifications"]
+	path = plugins/claude-notifications
+	url = https://github.com/ellyseum/claude-notifications.git
