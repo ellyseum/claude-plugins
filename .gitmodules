@@ -7,3 +7,12 @@
 [submodule "plugins/claude-notifications"]
 	path = plugins/claude-notifications
 	url = https://github.com/ellyseum/claude-notifications.git
+[submodule "plugins/claude-browser"]
+	path = plugins/claude-browser
+	url = https://github.com/ellyseum/claude-browser.git
+[submodule "plugins/claude-discipline"]
+	path = plugins/claude-discipline
+	url = https://github.com/ellyseum/claude-discipline.git
+[submodule "plugins/claude-continue"]
+	path = plugins/claude-continue
+	url = https://github.com/ellyseum/claude-continue.git

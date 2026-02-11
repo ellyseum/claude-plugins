@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ellyseum-plugins",
-  "description": "Claude Code plugins by Ellyseum - vision, secrets, and notifications",
+  "description": "Claude Code plugins by Ellyseum",
   "owner": {
     "name": "Ellyseum",
     "email": "jocelyn@ellyseum.dev"
@@ -36,6 +36,36 @@
         "email": "jocelyn@ellyseum.dev"
       },
       "source": "./plugins/claude-notifications"
+    },
+    {
+      "name": "claude-browser",
+      "description": "Control your real browser from Claude - navigate, click, type, screenshot",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-browser"
+    },
+    {
+      "name": "claude-discipline",
+      "description": "AI accountability system - track mistakes, deliver consequences, reward good behavior",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-discipline"
+    },
+    {
+      "name": "claude-continue",
+      "description": "Auto-continue Claude until task completion - self-perpetuating agent loop",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-continue"
     }
   ]
 }

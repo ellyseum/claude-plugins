@@ -16,6 +16,9 @@ claude plugin marketplace add ellyseum/claude-plugins
 claude plugin install claude-vision
 claude plugin install claude-vault
 claude plugin install claude-notifications
+claude plugin install claude-browser
+claude plugin install claude-discipline
+claude plugin install claude-continue
 ```
 
 ## Plugins
@@ -56,6 +59,40 @@ Sounds, OS notifications, and task timing for Claude Code.
 - `/add-sound` — Add custom sounds to the jingle library
 - `/notify` — Show OS-level notifications (dialog or toast)
 - `/timer-config` — Configure duration-based actions
+
+---
+
+### claude-browser
+
+[![GitHub](https://img.shields.io/badge/repo-claude--browser-181717?logo=github)](https://github.com/ellyseum/claude-browser)
+
+Control your real browser from Claude — navigate, click, type, screenshot via Chrome extension.
+
+**Skills:**
+- `/browser` — Control your real browser with your cookies and sessions
+
+---
+
+### claude-discipline
+
+[![GitHub](https://img.shields.io/badge/repo-claude--discipline-181717?logo=github)](https://github.com/ellyseum/claude-discipline)
+
+AI accountability system — track mistakes, deliver consequences, reward good behavior.
+
+**Skills:**
+- `/discipline` — View/manage the accountability ledger
+- `/discipline-setup` — Configure punishment mode (cookies, timeout, spankings, custom)
+
+---
+
+### claude-continue
+
+[![GitHub](https://img.shields.io/badge/repo-claude--continue-181717?logo=github)](https://github.com/ellyseum/claude-continue)
+
+Auto-continue mode for autonomous task completion.
+
+**Skills:**
+- `/continue` — Toggle auto-continue mode (keeps working until task is done)
 
 ## License
 
