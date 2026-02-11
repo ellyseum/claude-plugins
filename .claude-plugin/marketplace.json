@@ -1,0 +1,41 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ellyseum-plugins",
+  "description": "Claude Code plugins by Ellyseum - vision, secrets, and notifications",
+  "owner": {
+    "name": "Ellyseum",
+    "email": "jocelyn@ellyseum.dev"
+  },
+  "plugins": [
+    {
+      "name": "claude-vision",
+      "description": "Visual context skills for Claude Code - clipboard, screenshots, video analysis, and image search",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-vision"
+    },
+    {
+      "name": "claude-vault",
+      "description": "Secure secrets handling for Claude Code - run API calls without exposing keys in session logs",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-vault"
+    },
+    {
+      "name": "claude-notifications",
+      "description": "Sounds, OS notifications, and task timing for Claude Code",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-notifications"
+    }
+  ]
+}
