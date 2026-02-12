@@ -66,6 +66,16 @@
         "email": "jocelyn@ellyseum.dev"
       },
       "source": "./plugins/claude-continue"
+    },
+    {
+      "name": "claude-brain-surgery",
+      "description": "Externalize Claude's auto-memory into your project directory — git-committable, portable, collaboratively editable",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-brain-surgery"
     }
   ]
 }

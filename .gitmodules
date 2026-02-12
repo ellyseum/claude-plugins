@@ -16,3 +16,6 @@
 [submodule "plugins/claude-continue"]
 	path = plugins/claude-continue
 	url = https://github.com/ellyseum/claude-continue.git
+[submodule "plugins/claude-brain-surgery"]
+	path = plugins/claude-brain-surgery
+	url = https://github.com/ellyseum/claude-brain-surgery.git
