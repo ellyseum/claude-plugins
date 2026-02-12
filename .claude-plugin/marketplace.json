@@ -76,6 +76,16 @@
         "email": "jocelyn@ellyseum.dev"
       },
       "source": "./plugins/claude-brain-surgery"
+    },
+    {
+      "name": "claude-claudorepo",
+      "description": "Fleet-wide multi-repo coordination — manage claudorepos with /claudo commands",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ellyseum",
+        "email": "jocelyn@ellyseum.dev"
+      },
+      "source": "./plugins/claude-claudorepo"
     }
   ]
 }
